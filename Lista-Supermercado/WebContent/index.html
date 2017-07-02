@@ -37,38 +37,6 @@ IMAGENS USADAS FONTE : https://pixabay.com
 </head>
 <body ng-controller="CarrinhoController">
 
-	<!-- 	<div class="jumbotron"> -->
-	<!-- 		<div class="container text-center"> -->
-	<!-- 			<h1>iBuy Store</h1> -->
-	<!-- 		</div> -->
-	<!-- 	</div> -->
-
-	<!-- 	<nav class="navbar navbar-inverse"> -->
-	<!-- 		<div class="container-fluid"> -->
-	<!-- 			<div class="navbar-header"> -->
-	<!-- 				<a class="navbar-brand" href="#">iBuy Store</a> -->
-	<!-- 			</div> -->
-
-	<!-- 			<div class="collapse navbar-collapse navHeaderCollapse" id="myNavbar"> -->
-
-	<!-- 				<ul class="nav navbar-nav navbar-right"> -->
-	<!-- 					<li> -->
-	<!-- 						<a href="#"><span class="glyphicon glyphicon-user"></span> -->
-	<!-- 								Olá  -->
-	<!-- 						</a> -->
-	<!-- 					</li> -->
-	<!-- 					<li> -->
-	<!-- 						<a data-toggle="modal" data-target="#modalCarrinho"> <span -->
-	<!-- 							class="glyphicon glyphicon-shopping-cart"></span> Lista de -->
-	<!-- 							compras -->
-	<!-- 						</a> -->
-	<!-- 					</li> -->
-	<!-- 				</ul> -->
-	<!-- 			</div> -->
-
-	<!-- 		</div> -->
-	<!-- 	</nav> -->
-
 
 	<div class="jumbotron">
 		<div class="container text-center">
@@ -212,42 +180,43 @@ IMAGENS USADAS FONTE : https://pixabay.com
 						<h4 class="modal-title">Produtos adicionados ao carrinho</h4>
 					</div>
 					<div class="modal-body">
-
-						<table class="table table-responsive">
-							<thead>
-								<tr>
-									<th>Produto</th>
-									<th>Quantidade</th>
-									<th>Preço</th>
-									<th>Remover 1</th>
-									<th>Remover Todos</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr ng-repeat="item in itens" class="">
-									<td>{{item.nome}}</td>
-									<td>{{item.quantidade}}</td>
-									<td>R$ {{item.preco}},00</td>
-									<td align="center" ng-click="diminuirQuantidade(item,0)">
-										<a href="#"> <span class="glyphicon glyphicon-minus-sign"></span>
-									</a>
-									</td>
-									<td align="center" ng-click="diminuirQuantidade(item,-1)">
-										<a href="#"> <span class="glyphicon glyphicon-remove-sign"></span>
-									</a>
-								</tr>
-							</tbody>
-							<tfoot>
-								<tr>
-									<td>&nbsp;</td>
-									<td>&nbsp;</td>
-									<td>&nbsp;</td>
-									<td>&nbsp;</td>
-									<td>&nbsp;</td>
-								</tr>
-							</tfoot>
-						</table>
-
+						<div class="table-responsive">
+							<table class="table">
+								<thead>
+									<tr>
+										<th>Produto</th>
+										<th>Quantidade</th>
+										<th>Preço</th>
+										<th>Remover 1</th>
+										<th>Remover Todos</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr ng-repeat="item in itens">
+										<td>{{item.nome}}</td>
+										<td>{{item.quantidade}}</td>
+										<td>R$ {{item.preco}},00</td>
+										<td align="center" ng-click="diminuirQuantidade(item,0)">
+											<a href="#"> <span class="glyphicon glyphicon-minus-sign"></span>
+										</a>
+										</td>
+										<td align="center" ng-click="diminuirQuantidade(item,-1)">
+											<a href="#"> <span
+												class="glyphicon glyphicon-remove-sign"></span>
+										</a>
+									</tr>
+								</tbody>
+								<tfoot>
+									<tr>
+										<td>&nbsp;</td>
+										<td>&nbsp;</td>
+										<td>&nbsp;</td>
+										<td>&nbsp;</td>
+										<td>&nbsp;</td>
+									</tr>
+								</tfoot>
+							</table>
+						</div>
 					</div>
 					<div class="modal-footer">
 						<button type="button" class="btn btn-default" data-dismiss="modal">fechar</button>
