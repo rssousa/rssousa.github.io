@@ -25,7 +25,7 @@
 }
 
 .rodape {
-	background-color: black;
+	background-color: #e7e7e7;
 }
 </style>
 
@@ -37,33 +37,65 @@ IMAGENS USADAS FONTE : https://pixabay.com
 </head>
 <body ng-controller="CarrinhoController">
 
+	<!-- 	<div class="jumbotron"> -->
+	<!-- 		<div class="container text-center"> -->
+	<!-- 			<h1>iBuy Store</h1> -->
+	<!-- 		</div> -->
+	<!-- 	</div> -->
+
+	<!-- 	<nav class="navbar navbar-inverse"> -->
+	<!-- 		<div class="container-fluid"> -->
+	<!-- 			<div class="navbar-header"> -->
+	<!-- 				<a class="navbar-brand" href="#">iBuy Store</a> -->
+	<!-- 			</div> -->
+
+	<!-- 			<div class="collapse navbar-collapse navHeaderCollapse" id="myNavbar"> -->
+
+	<!-- 				<ul class="nav navbar-nav navbar-right"> -->
+	<!-- 					<li> -->
+	<!-- 						<a href="#"><span class="glyphicon glyphicon-user"></span> -->
+	<!-- 								Olá  -->
+	<!-- 						</a> -->
+	<!-- 					</li> -->
+	<!-- 					<li> -->
+	<!-- 						<a data-toggle="modal" data-target="#modalCarrinho"> <span -->
+	<!-- 							class="glyphicon glyphicon-shopping-cart"></span> Lista de -->
+	<!-- 							compras -->
+	<!-- 						</a> -->
+	<!-- 					</li> -->
+	<!-- 				</ul> -->
+	<!-- 			</div> -->
+
+	<!-- 		</div> -->
+	<!-- 	</nav> -->
+
+
 	<div class="jumbotron">
 		<div class="container text-center">
 			<h1>iBuy Store</h1>
 		</div>
 	</div>
 
-	<nav class="navbar navbar-inverse">
-		<div class="container-fluid">
-			<div class="navbar-header">
-				<a class="navbar-brand" href="#">iBuy Store</a>
-			</div>
 
-			<div class="collapse navbar-collapse" id="myNavbar">
-
-				<ul class="nav navbar-nav navbar-right">
-					<li><a href="#"><span class="glyphicon glyphicon-user"></span>
-							Olá </a></li>
-					<li><a data-toggle="modal" data-target="#modalCarrinho"> <span
-							class="glyphicon glyphicon-shopping-cart"></span> Lista de
-							compras
-					</a></li>
-				</ul>
-			</div>
-
+	<nav class="navbar navbar-default" role="navigation">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse"
+				data-target="#bar1">
+				<span class="sr-only">Toggle navigation</span> <span
+					class="icon-bar"></span> <span class="icon-bar"></span> <span
+					class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="#">iBuy Store</a>
 		</div>
+		<div class="collapse navbar-collapse" id="bar1">
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="#"><span class="glyphicon glyphicon-user"></span>
+						Olá </a></li>
+				<li><a data-toggle="modal" data-target="#modalCarrinho"> <span
+						class="glyphicon glyphicon-shopping-cart"></span> Lista de compras
+				</a></li>
+			</ul>
 	</nav>
-
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-sm-4">
@@ -111,8 +143,7 @@ IMAGENS USADAS FONTE : https://pixabay.com
 					<div class="panel-body">
 						<img src="img/glasses-1333433_960_720.jpg" class="img-rounded"
 							alt="Cinque Terre" width="304" height="236"> <span
-							class="label label-default">1 Oculos Classico R$
-							100,00</span>
+							class="label label-default">1 Oculos Classico R$ 100,00</span>
 					</div>
 				</div>
 			</div>
@@ -120,7 +151,7 @@ IMAGENS USADAS FONTE : https://pixabay.com
 	</div>
 	<br>
 
-	<div class="container">
+	<div class="container-fluid">
 		<div class="row">
 			<div class="col-sm-4">
 				<div class="panel panel-default">
@@ -166,7 +197,8 @@ IMAGENS USADAS FONTE : https://pixabay.com
 					<div class="panel-body">
 						<img src="img/sunglasses-178151__340.jpg" class="img-rounded"
 							alt="Cinque Terre" width="304" height="236"> <span
-							class="label label-default"> 1 Oculos Esportivo 2 R$ 200,00</span>
+							class="label label-default"> 1 Oculos Esportivo 2 R$
+							200,00</span>
 					</div>
 				</div>
 			</div>
@@ -218,7 +250,7 @@ IMAGENS USADAS FONTE : https://pixabay.com
 
 					</div>
 					<div class="modal-footer">
-						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						<button type="button" class="btn btn-default" data-dismiss="modal">fechar</button>
 					</div>
 				</div>
 			</div>
@@ -251,6 +283,5 @@ IMAGENS USADAS FONTE : https://pixabay.com
 	<footer class="rodape">
 		<p>iBuy Store</p>
 	</footer>
-
 </body>
 </html>
