@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
-<script src="http://code.angularjs.org/1.0.1/angular-1.0.1.min.js"></script>
+<script src="https://code.angularjs.org/1.0.1/angular-1.0.1.min.js"></script>
 <script src="js/main.js"></script>
 <script src="js/controllers/carrinho-controller.js"></script>
 <link rel="stylesheet"
@@ -84,8 +84,9 @@ IMAGENS USADAS FONTE : https://pixabay.com
 			<div class="col-sm-4">
 				<div class="panel panel-default">
 					<div class="panel-heading">
-						<button ng-click="adicionar('Oculos Transparente',100);"
-							type="button" class="btn btn-default">
+						<button data-toggle="modal" data-target="#modalAdicionadoSucesso"
+							ng-click="adicionar('Oculos Transparente',100);" type="button"
+							class="btn btn-default">
 							<span class="glyphicon glyphicon-plus"></span> Adicionar a lista
 						</button>
 					</div>
@@ -99,7 +100,8 @@ IMAGENS USADAS FONTE : https://pixabay.com
 			<div class="col-sm-4">
 				<div class="panel panel-default">
 					<div class="panel-heading">
-						<button ng-click="adicionar('Oculos Classico',100);" type="button"
+						<button data-toggle="modal" data-target="#modalAdicionadoSucesso"
+							ng-click="adicionar('Oculos Classico',100);" type="button"
 							class="btn btn-default">
 							<span class="glyphicon glyphicon-plus"></span> Adicionar a lista
 						</button>
@@ -121,7 +123,8 @@ IMAGENS USADAS FONTE : https://pixabay.com
 			<div class="col-sm-4">
 				<div class="panel panel-default">
 					<div class="panel-heading">
-						<button ng-click="adicionar('Oculos Vermelho',200);" type="button"
+						<button data-toggle="modal" data-target="#modalAdicionadoSucesso"
+							ng-click="adicionar('Oculos Vermelho',200);" type="button"
 							class="btn btn-default">
 							<span class="glyphicon glyphicon-plus"></span> Adicionar a lista
 						</button>
@@ -136,8 +139,9 @@ IMAGENS USADAS FONTE : https://pixabay.com
 			<div class="col-sm-4">
 				<div class="panel panel-default">
 					<div class="panel-heading">
-						<button ng-click="adicionar('Oculos Esportivo 1',200);"
-							type="button" class="btn btn-default">
+						<button data-toggle="modal" data-target="#modalAdicionadoSucesso"
+							ng-click="adicionar('Oculos Esportivo 1',200);" type="button"
+							class="btn btn-default">
 							<span class="glyphicon glyphicon-plus"></span> Adicionar a lista
 						</button>
 					</div>
@@ -151,8 +155,9 @@ IMAGENS USADAS FONTE : https://pixabay.com
 			<div class="col-sm-4">
 				<div class="panel panel-default">
 					<div class="panel-heading">
-						<button ng-click="adicionar('Oculos Esportivo 2',300);"
-							type="button" class="btn btn-default">
+						<button data-toggle="modal" data-target="#modalAdicionadoSucesso"
+							ng-click="adicionar('Oculos Esportivo 2',300);" type="button"
+							class="btn btn-default">
 							<span class="glyphicon glyphicon-plus"></span> Adicionar a lista
 						</button>
 					</div>
@@ -223,7 +228,7 @@ IMAGENS USADAS FONTE : https://pixabay.com
 			<div class="modal-dialog">
 				<!-- Modal content-->
 				<div class="modal-content">
-					
+
 					<div class="modal-body">
 						<div class="alert alert-success" align="center">
 							<strong>Sucesso!</strong> Item adicionado a "Lista de compras"
